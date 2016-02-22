@@ -1,0 +1,79 @@
+
+// colors
+$bg-color: #edeef1;
+$white: #fff;
+$brown: #ddd;
+$page-width: 960px;
+$break-small: 435px;
+
+body {
+  background-color: $bg-color;
+}
+
+nav {
+  width: 100%;
+  line-height: 3em;
+  padding-top: 3em;
+  background: $white;
+
+  @media screen and (max-width: $break-small) {
+    line-height: 1em;
+    padding: 1em;
+  }
+
+}
+
+header {
+  width: 100%;
+  background:$brown;
+
+  @media screen and (min-width: $break-small) {
+    padding: 1em 0;
+    .image {
+      width: 60%;
+    }
+    .bio {
+      width: 40%;
+      float: right;
+    }
+  }
+  @media screen and (max-width: $break-small) {
+    line-height: 1em;
+    padding: 1em;
+  }
+}
+
+.defenition {
+  width: 100%;
+  @media screen and (min-width: $break-small) {
+    padding: 4em;
+  }
+  @media screen and (max-width: $break-small) {
+    line-height: 1em;
+    padding: 1em;
+  }
+}
+
+footer {
+  @media screen and (min-width: $break-small) {
+    width:30%;
+    margin: 0 auto;
+    padding: 4em;
+  }
+  @media screen and (max-width: $break-small) {
+    line-height: 1em;
+    padding: 1em;
+    text-align: center;
+  }
+}
+
+.clear {
+  clear: both;
+}
+.container {
+  @media screen and (max-width: $page-width) {
+    padding: 0 1em;
+  }
+  max-width: 960px;
+  margin: 0 auto;
+}
